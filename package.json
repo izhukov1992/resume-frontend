@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gulp": "^3.9.1",
     "react": "^16.2.0",
-    "startbootstrap-resume": "https://github.com/izhukov1992/startbootstrap-resume.git"
+    "startbootstrap-resume": "git+https://github.com/izhukov1992/startbootstrap-resume.git"
   },
   "devDependencies": {},
   "scripts": {
