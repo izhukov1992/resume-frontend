@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "react": "^16.2.0"
+    "react": "^16.2.0",
+    "startbootstrap-resume": "https://github.com/izhukov1992/startbootstrap-resume.git"
   },
   "devDependencies": {},
   "scripts": {
