@@ -13,6 +13,7 @@ class App extends React.Component {
     fetch('/api/v1/account/1/')
       .then(response => response.json())
       .then(json => {
+        console.log(json);
         this.setState({profile: json});
       });
   }
@@ -20,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Navigation />
+        <Navigation userpic={this.state.profile.userpic} />
         <Content profile={this.state.profile} />
       </div>
     );

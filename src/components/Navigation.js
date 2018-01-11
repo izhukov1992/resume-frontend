@@ -7,7 +7,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <Userpic />
+        <Userpic userpic={this.props.userpic} />
         <MenuToggler />
         <Menu />
       </nav>
