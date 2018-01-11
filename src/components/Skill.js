@@ -1,11 +1,13 @@
 import React from 'react';
+import SKILLS from '../constants/Skills.js';
 
 class Skill extends React.Component {
- render() {
-   return (
-            <li className="list-inline-item">
-              <i className="devicons devicons-python"></i>
-            </li>
+  render() {
+    const type = SKILLS[this.props.type];
+    return (
+      <li className="list-inline-item">
+        <i className={"devicons devicons-" + type}></i>
+      </li>
     );
   }
 }

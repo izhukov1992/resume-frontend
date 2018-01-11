@@ -9,46 +9,10 @@ class Skills extends React.Component {
           <h2 className="mb-5">Skills</h2>
           <div className="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul className="list-inline list-icons">
-            <Skill />
-            <Skill />
-            <Skill />
-
-            <li className="list-inline-item">
-              <i className="devicons devicons-python"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-django"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-javascript"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-react"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-angular"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-jquery"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-bootstrap"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-gulp"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-heroku"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-docker"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-linux"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="devicons devicons-git"></i>
-            </li>
+            {this.props.skills !== undefined && this.props.skills.map((skill) =>
+              <Skill key={skill.id}
+                     type={skill.type} />
+            )}
           </ul>
         </div>
       </section>

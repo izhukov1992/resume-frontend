@@ -1,8 +1,8 @@
 import React from 'react';
 
 class Userpic extends React.Component {
- render() {
-   return (
+  render() {
+    return (
       <a className="navbar-brand js-scroll-trigger" href="#page-top">
         <span className="d-block d-lg-none">Start Bootstrap</span>
         <span className="d-none d-lg-block">
